@@ -1,0 +1,10 @@
+services:
+  app:
+    build: .
+    container_name: gintest
+    tty: true
+    ports:
+      - "8080:8080"
+    volumes:
+      - .:/app
+#    command: ["./main"]
